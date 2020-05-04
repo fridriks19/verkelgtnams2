@@ -1,0 +1,25 @@
+Þriðjudagur 28 apríl
+Friðrik: Gerði notendahópa, notkunartilvik, inngang og kröfulista.
+Davíð: Gerði notendahópa, notkunartilvik, kröfulista og byrjaði að teikna upp wireframe fyrir vefsíðunna.
+Silfá: Gerði notkunartilvik.
+
+Miðvikudagur 29 apríl
+Friðrik: Fór yfir og kláraði lokaorð
+Davíð: Kláraði að gera wireframe og tók viðtöl við systkini sín á þau
+Silfá: Kláraði að gera notkunartilvikin
+
+Fimmtudagur 30 apríl
+Friðrik: Byrjaði á navigation diagram, forritunarreglunum, stöðuritunum og inngang
+Davíð: Byrjaður á prototype fyrir veffsíðuna
+Silfá: Gerir klasarit
+
+Föstudagur 1 maí.
+Friðrik: Hélt áfram í forritunarreglum og hjálpaði við að setja upp viðtöl.
+Davíð: Kláraði prototype og gerði inngang og lokaorð.
+Silfá: Kláraði klasarit og flæðirit.
+
+Mánudagur 4 maí.
+Setti upp git og byrjuðum að setja upp öll basic directoriin og structurinn á verkefninu og byrjuðum að skipta verkefnum á milli okkar
+Friðrik:
+Davíð:
+Silfá:
