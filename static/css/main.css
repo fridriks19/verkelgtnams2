@@ -1,9 +1,7 @@
 .games {
     border-bottom: solid 2px rgb(155, 155, 155);
-
-}
-h3 {
     color: red;
+    background-color: aqua;
 }
 
 .footer  {
@@ -11,10 +9,19 @@ h3 {
       left: 0;
       bottom: 0;
       width: 100%;
-      background-color: red;
+      background-color: rgb(151, 179, 255) ;
       color: white;
       text-align: center;
 }
-p {
+
+.login{
+    text-align: right;
     color: red;
 }
+
+.cart{
+    text-align: right;
+    color: red
+
+}
+
