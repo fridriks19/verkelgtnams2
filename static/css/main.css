@@ -1,3 +1,5 @@
+
+
 .games {
     border-bottom: solid 2px rgb(155, 155, 155);
     color: red;
@@ -14,14 +16,73 @@
       text-align: center;
 }
 
+.login button,.cart button {
+    background-color: rgb(155, 155, 155);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 10%;
+}
+
 .login{
     text-align: right;
-    color: red;
 }
 
 .cart{
     text-align: right;
-    color: red
 
+}
+
+.navigation a{
+    float: left;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+    width: 48%;
+    text-align: center;
+    padding-left: 10px ;
+
+    }
+.navigation {
+  width: 100%;
+  background-color: rgb(228,228,228);
+  overflow: auto;
+}
+
+.navigation a:hover {
+    background-color: rgb(165, 161, 161);
+}
+
+.navigation a:active{
+    background-color: rgb(129, 129, 129);
+}
+
+.search{
+
+}
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: right;
+    width: 30%;
+    background: white;
+}
+
+form.search button{
+    float: right;
+    width: 5%;
+    padding: 20px;
+    background: gray;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
 }
 
