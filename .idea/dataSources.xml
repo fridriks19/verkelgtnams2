@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="CapConDB" uuid="b9becc22-eaae-46fb-970f-77e967d0e9d6">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://balarama.db.elephantsql.com:5432/lsqehobs</jdbc-url>
+    </data-source>
+  </component>
+</project>
