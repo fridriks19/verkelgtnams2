@@ -1,0 +1,10 @@
+INSERT INTO games_gamescategory (name) VALUES('Byssuleikir')
+INSERT INTO games_gamescategory (name) VALUES('Hrillingsleikir')
+INSERT INTO games_gamescategory (name) VALUES('Hasarleikir')
+INSERT INTO games_gamescategory (name) VALUES('Bílaleikir')
+
+INSERT INTO games_games (name, description, price, on_sale, category_id) VALUES('DOOM Eternal', 'DOOM Eternal er byssuleikur á allar nýjustu leikjavélarnar', 49.99, true, 1)
+INSERT INTO games_games (name, description, price, on_sale, category_id) VALUES('CARS 3', 'CARS 3 er bílaleikur gerður útfrá myndunum sem allir elska og selst á nintendo switch', 39.99, false, 4)
+INSERT INTO games_gamesimage (image, games_id) VALUES('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gamestop.com%2Fvideo-games%2Fswitch%2Fgames%2Fproducts%2Fcars-3-driven-to-win%2F10146825.html&psig=AOvVaw3yBRhMHJjKkIn_qvvoEyRG&ust=1588880102759000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCb-eP9n-kCFQAAAAAdAAAAABAD', 2)
+
+

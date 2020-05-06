@@ -1,4 +1,11 @@
-
+body {
+    height: 100vh;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    padding: 0;
+}
 
 .games {
     border-bottom: solid 2px rgb(155, 155, 155);
