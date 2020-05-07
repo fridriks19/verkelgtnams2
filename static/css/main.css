@@ -90,18 +90,33 @@ form.search button{
     cursor: pointer;
 }
 
-/* Þetta er til að displaya alla leiki sem flex box  */
+/* The parent is a flex with a wrap to get a normal looking listing*/
 .index-games {
     display: flex;
+    flex-wrap: wrap;
 }
 
+/* This makes sure that there can only be three games per row */
 .single-games {
-    padding: 30px;
-    /* border-style: solid */
-    width: 30%;
+    border-style: solid;
+    margin: 1%;
+    flex: 0 0 30%;
 ;
 }
 
 .single-games .games-img{
     height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.single-games h4 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.single-games p{
+    font-size: 18px;
 }

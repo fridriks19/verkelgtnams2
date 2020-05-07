@@ -1,4 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h3 class="#">Hello from the index app in computers template</h3>
+    <div class="computers">
+        <h3 class="#">Hello from the index app in games template</h3>
+    </div>
+    <div class="index-computers">
+    {% for computer in computers %}
+        {% include 'computers/single_computer.html' with computers=computer %}
+    {% endfor %}
+    </div>
 {% endblock %}
