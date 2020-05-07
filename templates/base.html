@@ -9,17 +9,20 @@
 <body>
 
 
+
+    <div class="home">
+        <a href="{% url 'mainpage-index' %}" class="link" >Captain Console</a>
+    </div>
+
     {% include 'login.html' %}
     {% include 'searchbar.html'%}
     {% include 'navigation.html' %}
-
 
    <div class="container">
           {% block content %}
 
             {% endblock %}
     </div>
-
      {% include 'footer.html' %}
 
 

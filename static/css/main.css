@@ -42,7 +42,7 @@ body {
 
 .navigation a{
     float: left;
-    padding: 12px;
+    padding: 4px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 30px;
@@ -98,10 +98,14 @@ form.search button{
 
 /* This makes sure that there can only be three games per row */
 .single-games {
-    border-style: solid;
+    border-style: double;
     margin: 1%;
     flex: 0 0 30%;
 ;
+}
+/*when hovering over a single game */
+.single-games:hover{
+  background-color: rgb(198, 198, 198);
 }
 
 .single-games .games-img{
@@ -120,3 +124,7 @@ form.search button{
 .single-games p{
     font-size: 18px;
 }
+.home .link {
+    color: rgb(172, 214, 255);
+    font-size: 50px;
+ }

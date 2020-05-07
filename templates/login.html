@@ -1,16 +1,21 @@
-<div class="login">
-    <form action="{% url 'loginpage-index' %}">
-        <button  type="submit">Innskráning</button>
-    </form>
+<div class="Log">
+    <div class="login">
+        <form action="{% url 'loginpage-index' %}">
+            <button  type="submit">Innskráning</button>
+        </form>
+    </div>
 
+    <div class="login">
+        <form action="{% url 'cart-index' %}">
+            <button type="submit">Karfa</button>
+        </form>
+    </div>
 </div>
 
 
-<div class="cart">
-    <form action="{% url 'cart-index' %}">
-        <button type="submit">Karfa</button>
-    </form>
-</div>
+
+
+
 
 
 
