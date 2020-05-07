@@ -3,7 +3,7 @@
     <div class="games">
         <h3 class="#">Hello from the index app in games template</h3>
     </div>
-    <div>
+    <div class="index-games">
     {% for game in games %}
         {% include 'games/single_game.html' with games=game %}
     {% endfor %}
