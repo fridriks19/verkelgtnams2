@@ -93,10 +93,12 @@ form.search button{
 /* Þetta er til að displaya alla leiki sem flex box  */
 .index-games {
     display: flex;
+
 }
 
 .single-games {
     padding: 30px;
+    border: black 5px;
 }
 
 .single-games .games-img{
