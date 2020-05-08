@@ -28,3 +28,10 @@ Silfá:
 Davíð og Friðrik: Unnu að því að setja forsíðuna upp og fá einhverja virkni á henni. til dæmis settu upp footer og header (navigation bar) þeir settu líka upp button fyrir bæði körfu,
 innskráningu og search með enga virkni eins og núna stendur, bara til að sjá hvernig uppsetningin á síðunni er.
 Silfá:
+
+Miðvikudagur 6 maí.
+Friðrik og Davíð settu upp tölvuleikja síðuna og kláruðu að setja upp útlit og virkni hennar, það á samt eftir að
+gera valmöguleikan um að velja vörur eftir verði eða flokki.
+
+fimmtudagur 7 maí.
+Friðrik og Davíð

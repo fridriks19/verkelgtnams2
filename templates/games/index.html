@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
+    <p>Hæsta verð</p>
+    <p>Lægsta verð</p>
     <div class="index-games">
     {% for game in games %}
         {% include 'games/single_game.html' with games=game %}

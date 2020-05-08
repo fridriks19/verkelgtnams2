@@ -1,5 +1,5 @@
 <div class="single-games">
-    <a href="{% url "information-index" %}">
+    <a href="/games/{{ games.id }}">
         <img class="games-img" src="{{ games.gamesimage_set.first.image }}"/>
         <h4>{{ games.name }}</h4>
         <p>{{ games.description }}</p>

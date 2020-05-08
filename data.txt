@@ -12,3 +12,11 @@ INSERT INTO games_gamesimage (image, games_id) VALUES('https://www.google.com/ur
 INSERT INTO computers_computers (name, description, price, on_sale) VALUES('Nintendo Switch', 'The newest and most amazing and epic and coolest gaming computer from the infamous company nintendo, this is a hand helt gaming console',398.99, false)
 INSERT INTO computers_computersimage (image, computers_id) VALUES('https://specials-images.forbesimg.com/imageserve/5e9b2de07be2870006ce2400/960x0.jpg?fit=scale', 1)
 
+<div class="single-games">
+    <a href="{% url "information-index" %}">
+        <img class="games-img" src="{{ games.gamesimage_set.first.image }}"/>
+        <h4>{{ games.name }}</h4>
+        <p>{{ games.description }}</p>
+        <p>{{ games.price }}$</p>
+    </a>
+</div>
