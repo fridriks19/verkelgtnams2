@@ -6,4 +6,7 @@
     {% for games_image in games.gamesimage_set.all %}
         <img src="{{ games_image.image }}" class="games-img" />
     {% endfor %}
+
+    <a href="{% url 'delete_game' games.id %}" class="#">Delete game</a>
+    <a href="{% url 'update_game' games.id %}" class="#">Update game</a>
 {% endblock %}

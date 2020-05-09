@@ -7,12 +7,14 @@ class Computers(models.Model):
     description = models.CharField(max_length=999, blank=True)
     price = models.FloatField()
     on_sale = models.BooleanField()
-
+    def __str__(self):
+        return self.name
 
 
 # beint úr fyrirlestri 9
 class ComputersImage(models.Model):
     image = models.CharField(max_length=999)
     computers_id = models.ForeignKey(Computers, on_delete=models.CASCADE)
-
+    def __str__(self):
+        return self.name
 

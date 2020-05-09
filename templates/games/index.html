@@ -2,6 +2,15 @@
 {% block content %}
     <p>Hæsta verð</p>
     <p>Lægsta verð</p>
+    <h1>Tölvuleikir</h1>
+
+    <div class="input-group">
+        <input type="search" class="#" id="search-box" placeholder="Hverju ertu að leita af..."/>
+        <div class="#">
+            <button type="button" id="search-btn" class="#">Search</button>
+        </div>
+    </div>
+
     <div class="index-games">
     {% for game in games %}
         {% include 'games/single_game.html' with games=game %}
