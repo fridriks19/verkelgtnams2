@@ -15,7 +15,7 @@ $(document).ready(function(){
                                 </a> 
                             </div>`
                 });
-                $('.games').html(newHtml.join(''));
+                $('.index-games').html(newHtml.join(''));
                 $('#search-box').val('');
             },
             error: function(xhr, status, error){
@@ -23,6 +23,8 @@ $(document).ready(function(){
                 console.error(error);
             }
         })
-
     });
 });
+
+
+
