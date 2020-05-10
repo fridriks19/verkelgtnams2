@@ -1,10 +1,20 @@
 
 body {
-    min-height: 100vh;
+    min-height: 600px;
     padding: 0;
 
 }
 
+#header {
+    text-align: center;
+    font-size: 40px;
+    border-top: 1px solid rgb(217, 217, 217);
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.container{
+    min-height: 600px;
+}
 .games {
     border-bottom: solid 2px rgb(155, 155, 155);
     color: red;
@@ -72,23 +82,35 @@ body {
 }
 
 .search{
-
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: white;
+    padding: 20px;
 }
 
-form.search input[type=text] {
-    padding: 10px;
+/* padding for the search bars*/
+.input-group {
+    padding: 50px;
+}
+
+.search input[type=text] {
+
+    /*padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
     float: right;
-    width: 30%;
     background: white;
+    width: 80%;
+    background: #f1f1f1;*/
 }
 
-form.search button{
-    float: right;
-    width: 5%;
+.input-group #search-btn{
+    margin: auto;
+    width: 20%;
     padding: 20px;
-    background: gray;
+    background: rgb(205, 205, 205);
     color: white;
     font-size: 17px;
     border: 1px solid grey;
@@ -100,6 +122,7 @@ form.search button{
 .index-games {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid rgb(217, 217, 217);
 }
 
 /* This makes sure that there can only be three games per row */
@@ -120,6 +143,7 @@ form.search button{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    border: 1px solid black;
 }
 
 .single-games h4 {
@@ -137,14 +161,38 @@ form.search button{
  }
 
 .details{
-    display: flex;
 }
 
 .details .games-img{
-    height: 300px;
+    padding: 10px;
+    height: 500px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    float: left;
+    margin: 30px;
+    border: 1px solid black;
+    border-color: rgb(226, 226, 226) ;
 }
+
+.details #price{
+    background-color: rgb(0, 30, 127);
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.details #description{
+    padding: 7px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+
+.details h1{
+    padding-top: 50px;
+}
+
+
+
 

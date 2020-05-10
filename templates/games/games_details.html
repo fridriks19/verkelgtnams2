@@ -5,8 +5,8 @@
             <img src="{{ games_image.image }}" class="games-img" />
         {% endfor %}
         <h1>{{ games.name }}</h1>
-        <p>{{ games.description }}</p>
-        <p>{{ games.price }}</p>
+        <p id="description">{{ games.description }}</p>
+        <p id="price">{{ games.price }} kr.</p>
     </div>
 
     <a href="{% url 'delete_game' games.id %}" class="#">Delete game</a>
