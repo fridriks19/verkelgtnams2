@@ -11,6 +11,30 @@ body {
     background-color: aqua;
 }
 
+.login {
+    float: right;
+    margin: 15px;
+}
+
+.login #login, #register, #logout{
+    background-color: rgb(151, 179, 255);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 10%;
+    border-radius: 20px;
+}
+
+.login:hover{
+
+}
+
+
+
+
 .footer  {
       left: 0;
       bottom: 0;
@@ -30,13 +54,13 @@ body {
     width: 48%;
     text-align: center;
     padding-left: 10px ;
-
+    border-style: solid;
     }
 .navigation {
   width: 100%;
   background-color: rgb(228,228,228);
   overflow: auto;
-    border-style: solid;
+
 }
 
 .navigation a:hover {
@@ -109,32 +133,18 @@ form.search button{
 
 .home .link {
     color: rgb(172, 214, 255);
-    font-size: 50px;
+    font-size: 70px;
  }
 
-.login {
-    float: right;
-
+.details{
+    display: flex;
 }
 
-.login #login{
-    background-color: rgb(155, 155, 155);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    cursor: pointer;
-    width: 10%;
+.details .games-img{
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-.login #logout{
-    background-color: rgb(155, 155, 155);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    cursor: pointer;
-    width: 10%;
-}

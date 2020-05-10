@@ -14,7 +14,9 @@ class Computers(models.Model):
 # beint úr fyrirlestri 9
 class ComputersImage(models.Model):
     image = models.CharField(max_length=999)
-    computers_id = models.ForeignKey(Computers, on_delete=models.CASCADE)
+    computers = models.ForeignKey(Computers, on_delete=models.CASCADE)
     def __str__(self):
-        return self.name
+        return self.image
+
+
 

@@ -7,16 +7,7 @@ INSERT INTO games_games (name, description, price, on_sale, category_id) VALUES(
 INSERT INTO games_games (name, description, price, on_sale, category_id) VALUES('CARS 3', 'CARS 3 er bílaleikur gerður útfrá myndunum sem allir elska og selst á nintendo switch', 39.99, false, 4)
 INSERT INTO games_gamesimage (image, games_id) VALUES('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gamestop.com%2Fvideo-games%2Fswitch%2Fgames%2Fproducts%2Fcars-3-driven-to-win%2F10146825.html&psig=AOvVaw3yBRhMHJjKkIn_qvvoEyRG&ust=1588880102759000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCb-eP9n-kCFQAAAAAdAAAAABAD', 2)
 
-
-
 INSERT INTO computers_computers (name, description, price, on_sale) VALUES('Nintendo Switch', 'The newest and most amazing and epic and coolest gaming computer from the infamous company nintendo, this is a hand helt gaming console',398.99, false)
 INSERT INTO computers_computersimage (image, computers_id) VALUES('https://specials-images.forbesimg.com/imageserve/5e9b2de07be2870006ce2400/960x0.jpg?fit=scale', 1)
 
-<div class="single-games">
-    <a href="{% url "information-index" %}">
-        <img class="games-img" src="{{ games.gamesimage_set.first.image }}"/>
-        <h4>{{ games.name }}</h4>
-        <p>{{ games.description }}</p>
-        <p>{{ games.price }}$</p>
-    </a>
-</div>
+

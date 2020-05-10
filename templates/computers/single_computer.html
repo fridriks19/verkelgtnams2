@@ -1,9 +1,10 @@
 
-<div class="single-computer">
-    <a href="#">
+<div class="single-computers">
+    <a href="/computers/{{ computers.id }}">
         <img class="computers-img" src="{{ computers.computersimage_set.first.image}}"/>
         <h4>{{ computers.name }}</h4>
         <p>{{ computers.description }}</p>
         <p>{{ computers.price }}</p>
     </a>
 </div>
+
