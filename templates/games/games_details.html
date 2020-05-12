@@ -6,11 +6,15 @@
         {% endfor %}
         <h1>{{ games.name }}</h1>
         <p id="description">{{ games.description }}</p>
-        <p id="price">{{ games.price }} kr.</p>
+        <ul>
+            <p id="price">{{ games.price }} kr.</p>
+            <a href="#" id="cart-btn">Setja í körfu</a>
+        </ul>
     </div>
 
-    <a href="#" class="cart-btn">Setja í körfu</a>
-    <a href="{% url 'delete_game' games.id %}" class="delete-btn">Eyða leik</a>
-    <a href="{% url 'update_game' games.id %}" class="update-btn">uppfæra leik</a>
+
+        <a href="{% url 'delete_game' games.id %}" id="delete-btn">Eyða leik</a>
+        <a href="{% url 'update_game' games.id %}" id="update-btn">Uppfæra leik</a>
+
 
 {% endblock %}

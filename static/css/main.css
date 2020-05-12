@@ -5,6 +5,11 @@ body {
     margin: 0px;
 }
 
+a:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+
 #header {
     text-align: center;
     font-size: 40px;
@@ -36,11 +41,10 @@ body {
     cursor: pointer;
     width: 10%;
     border-radius: 20px;
+    text-decoration: none;
 }
 
-.login:hover{
 
-}
 
 
 
@@ -131,6 +135,7 @@ body {
     border-style: double;
     margin: 1%;
     flex: 0 0 30%;
+    text-decoration: none;
 ;
 }
 /*when hovering over a single game */
@@ -147,13 +152,19 @@ body {
     border: 1px solid black;
 }
 
+.single-games .games-img:hover{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
 .single-games h4 {
     font-size: 25px;
     text-align: center;
+    color: rgb(0, 0, 0);
 }
 
 .single-games p{
     font-size: 18px;
+    color: rgb(0, 0, 0);
 }
 
 .home .link {
@@ -194,42 +205,42 @@ body {
     padding-top: 50px;
 }
 
-a:hover{
-    opacity: 0.5;
-    filter: alpha(opacity=40);
-}
-.delete-btn{
+
+
+#delete-btn{
     background-color: rgb(200, 0, 0);
     float: left;
     padding: 4px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding-left: 10px ;
+    font-size: 10px;
     border-style: solid;
-
+    margin-top: 200px;
     }
 
-.update-btn{
+#update-btn{
     background-color: rgb(50, 170, 255);
     float: left;
     padding: 4px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding-left: 10px ;
+    font-size: 17px;
     border-style: solid;
+    margin-top: 200px;
 }
 
-.cart-btn{
+#cart-btn{
     background-color: rgb(0, 206, 96);
-    float: left;
     padding: 4px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 20px;
-
     text-align: center;
     padding-left: 10px ;
     border-style: solid;
 }
+
 
 
