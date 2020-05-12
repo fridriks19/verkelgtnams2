@@ -6,9 +6,11 @@
         {% endfor %}
         <h1>{{ games.name }}</h1>
         <p id="description">{{ games.description }}</p>
+        <p>Leikjavél: {{ games.console.name}}</p>
         <ul>
             <p id="price">{{ games.price }} kr.</p>
             <a href="#" id="cart-btn">Setja í körfu</a>
+
         </ul>
     </div>
 

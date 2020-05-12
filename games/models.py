@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.conf import settings
+from computers.models import Computers
 
 class GamesCategory(models.Model):
     name = models.CharField(max_length=255)
@@ -10,15 +11,28 @@ class Games(models.Model):
     name = models.CharField(max_length=255)
     description = models.CharField(max_length=999, blank=True)
     category = models.ForeignKey(GamesCategory, on_delete=models.CASCADE)
+    console = models.ForeignKey(Computers, on_delete=models.CASCADE)
     price = models.FloatField()
     on_sale = models.BooleanField()
     def __str__(self):
         return self.name
 
 
-#beint úr fyrirlestri 9
 class GamesImage(models.Model):
     image = models.CharField(max_length=999)
     games = models.ForeignKey(Games, on_delete=models.CASCADE)
     def __str__(self):
         return self.image
+
+class OrderItem(models.Model):
+    items = models.ForeignKey(Games, on_delete=models.CASCADE)
+
+class Order(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    items = models.ManyToManyField(OrderItem)
+    start_date = models.DateTimeField(auto_now_add=True)
+    ordered_date = models.DateTimeField()
+    ordered = models.BooleanField(default=False)
+
+def add_to_cart():
+    pass

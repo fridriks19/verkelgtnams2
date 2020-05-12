@@ -3,6 +3,7 @@
         <img class="games-img" src="{{ games.gamesimage_set.first.image }}"/>
         <h4>{{ games.name }}</h4>
         <p>{{ games.description }}</p>
+        <p>Leikjavél: {{ games.console.name}}</p>
         <p>{{ games.price }}$</p>
     </a>
 </div>
