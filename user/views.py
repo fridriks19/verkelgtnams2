@@ -10,3 +10,11 @@ def register(request):
     return render(request, 'user/register.html', {
         'form': UserCreationForm()
     })
+
+def profile(request):
+    profile = Profile.objects.filter(user=request.user)
+    if request.method == 'POST':
+        print(1)
+    return render(request, 'user/profile.html', {
+        'form': ''
+    })

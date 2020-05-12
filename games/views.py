@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from games.forms.game_form import GameCreateForm, GameUpdateForm
@@ -18,11 +19,12 @@ def index(request):
     context = {'games': Games.objects.all().order_by('name') }
     return render(request, 'games/index.html', context)
 
+
 def get_games_by_id(request, id):
     return render(request, 'games/games_details.html', {
         'games': get_object_or_404(Games, pk=id)
     })
-
+@login_required
 def create_game(request):
     if request.method == 'POST':
         form = GameCreateForm(data=request.POST)
@@ -36,12 +38,12 @@ def create_game(request):
     return render(request, 'games/create_game.html', {
         'form': form
     })
-
+@login_required
 def delete_game(request, id):
     game = get_object_or_404(Games, pk=id)
     game.delete()
     return redirect('games-index')
-
+@login_required
 def update_game(request, id):
     instance = get_object_or_404(Games, pk=id)
     if request.method == 'POST':
