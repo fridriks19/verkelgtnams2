@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 from user.forms.profile_form import ProfileForm
 from user.models import Profile
-from cart.models import Order
+#from cart.models import Order
 
 
 def register(request):
@@ -18,10 +18,9 @@ def register(request):
 
 def profile(request):
     profile = Profile.objects.filter(user=request.user).first()
-    user_orders = Order.objects.filter(is_ordered=True, owner=profile)
-    context = {
-        'user_orders': user_orders
-    }
+    #user_orders = Order.objects.filter(is_ordered=True, owner=profile)
+    #context = {
+   # }
 
     if request.method == 'POST':
         form = ProfileForm(instance=profile, data=request.POST)
@@ -30,6 +29,6 @@ def profile(request):
             profile.user = request.user
             profile.save()
             return redirect('profile')
-    return render(request, 'user/profile.html', context, {
+    return render(request, 'user/profile.html', {
         'form': ProfileForm(instance=profile)
     })

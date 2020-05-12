@@ -1,11 +1,11 @@
 from django.db import models
 from games.models import Games
-from __future__ import unicode_literals
+#from __future__ import unicode_literals
 
 # Create your models here.
 from user.models import Profile
 
-
+'''
 class OrderItem(models.Model):
     games = models.OneToOneField(Games, on_delete=models.SET_NULL, null=True)
     is_ordered = models.BooleanField(defult=False)
@@ -29,3 +29,4 @@ class Order(models.Model):
 
     def __str__(self):
         return '{0} - {1}'.format(self.owner, self.itm_num)
+'''
