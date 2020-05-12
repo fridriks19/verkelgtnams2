@@ -13,12 +13,17 @@
         <a href="{% url 'mainpage-index' %}" class="link" >Captain Console</a>
     </div>
 
+    {% if user.is_authenticated %}
+        <img src="{{ user.profile.profile_image }}" class="profile-image">
+    {% endif %}
+
     <div class="login">
         {% if user.is_authenticated %}
-            <a id="logout" href="{% url 'logout' %}"> Útskrá</a>
+            <a id="logout" href="{% url 'logout' %}">Útskrá</a>
+            <a id="logout" href="{% url 'profile' %}">Notandi</a>
         {% else %}
-            <a id="login" href="{% url 'login' %}"> Innskrá</a>
-            <a id="register" href="{% url 'register' %}"> Stofna aðgang</a>
+            <a id="login" href="{% url 'login' %}">Innskrá</a>
+            <a id="register" href="{% url 'register' %}">Stofna aðgang</a>
         {% endif %}
     </div>
 
