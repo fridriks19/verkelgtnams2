@@ -9,6 +9,8 @@
         <p id="price">{{ games.price }} kr.</p>
     </div>
 
-    <a href="{% url 'delete_game' games.id %}" class="#">Delete game</a>
-    <a href="{% url 'update_game' games.id %}" class="#">Update game</a>
+    <a href="#" class="cart-btn">Setja í körfu</a>
+    <a href="{% url 'delete_game' games.id %}" class="delete-btn">Eyða leik</a>
+    <a href="{% url 'update_game' games.id %}" class="update-btn">uppfæra leik</a>
+
 {% endblock %}

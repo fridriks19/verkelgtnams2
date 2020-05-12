@@ -24,6 +24,7 @@ def get_games_by_id(request, id):
     return render(request, 'games/games_details.html', {
         'games': get_object_or_404(Games, pk=id)
     })
+
 @login_required
 def create_game(request):
     if request.method == 'POST':
@@ -38,11 +39,13 @@ def create_game(request):
     return render(request, 'games/create_game.html', {
         'form': form
     })
+
 @login_required
 def delete_game(request, id):
     game = get_object_or_404(Games, pk=id)
     game.delete()
     return redirect('games-index')
+
 @login_required
 def update_game(request, id):
     instance = get_object_or_404(Games, pk=id)
