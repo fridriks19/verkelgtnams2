@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
+    <h1>eat </h1>
+
+        <p>{% for game in games %}
+            {{ game.name}}
+        {% endfor %}</p>
 
 {% endblock %}

@@ -7,6 +7,7 @@ class Computers(models.Model):
     description = models.CharField(max_length=999, blank=True)
     price = models.FloatField()
     on_sale = models.BooleanField()
+    discount_price = models.FloatField(blank=True, null=True)
     def __str__(self):
         return self.name
 

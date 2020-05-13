@@ -2,9 +2,17 @@
     <a href="/games/{{ games.id }}">
         <img class="games-img" src="{{ games.gamesimage_set.first.image }}"/>
         <h4>{{ games.name }}</h4>
-        <p>{{ games.description }}</p>
+        <p>Tegund: {{ games.category.name }}</p>
         <p>Leikjavél: {{ games.console.name}}</p>
-        <p>{{ games.price }}$</p>
+
+            <p>
+                {% if games.on_sale %}
+                    <del>{{ games.price }}kr</del>
+                    {{ games.discount_price}} kr.
+                    {% else %}
+                    {{ games.price }}
+                {% endif %}
+            </p>
     </a>
 </div>
 

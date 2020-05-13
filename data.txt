@@ -11,3 +11,80 @@ INSERT INTO computers_computers (name, description, price, on_sale) VALUES('Nint
 INSERT INTO computers_computersimage (image, computers_id) VALUES('https://specials-images.forbesimg.com/imageserve/5e9b2de07be2870006ce2400/960x0.jpg?fit=scale', 1)
 
 
+
+INSERT INTO games_games (name, description, price, on_sale, category_id,console_id,discount_price) VALUES ('Doom Eternal',  'Doom Eternal er fyrstu persónu skotleikur hannaður af id Software. Doom Eternal er beint framhald af leiknum Doom og mun leikurinn taka þig inn í heim hryllings.', 11995, False, 2, 2,9995)
+
+INSERT INTO games_gamesimage(image, games_id) VALUES('https://images-na.ssl-images-amazon.com/images/I/91T8GA3DcML._SL1500_.jpg', 1)
+
+INSERT INTO games_games (name, description, price, on_sale, category_id,console_id,discount_price) VALUES ('Cars 3 Driven to Win', 'Cars 3 Driven to Win er bílaleikur hannaður af Avalanche Software. Leikurinn er byggður á heimsfrægu teiknmyndunum Cars.', 5995, True, 4,1,3995)
+
+INSERT INTO games_gamesimage(image, games_id) VALUES('https://cdn.alzashop.com/ImgW.ashx?fd=f3&cd=NSW500',2)
+
+INSERT INTO games_games (name, description, price, on_sale, category_id,console_id,discount_price) VALUES ('Mario Kart','Mario Kart er hannaður af Nintendo og er hann einn vinsælasti leikur heims. Leikurinn snýst um að vera fyrstur í mark og keyra andstæðing útaf. Það geta allt í 8 manns spilað samtímis!', 8495, False, 4,1,7995)
+
+INSERT INTO games_gamesimage(image, games_id) VALUES('https://s3.gaming-cdn.com/images/products/2615/orig/mario-kart-8-deluxe-switch-cover.jpg',3)
+
+INSERT INTO games_games (name, description, price, on_sale, category_id,console_id,discount_price) VALUES ('Witcher 3 Wild Hunt', 'Witcher 3 Wild Hunt er hannaður af CD Projekt Red, leikurinn er hassar- og ævintýraleikur sem fjallar um að drepa skrímsli og nornir.', 9995, False, 3, 1, 8995)
+
+INSERT INTO games_gamesimage(image, games_id) VALUES('https://images.vfl.ru/ii/1565087258/a1a0e83b/27455416.png', 4)
+
+INSERT INTO games_games (name, description, price, on_sale, category_id,console_id,discount_price) VALUES ('Far Cry 3','Far Cry 3 er hannaður af Ubisoft Montreal. Far Cry 3 er fyrstu persónu hassar- og skotleikur sem fjallar um að lifa á eyju sem hefur verið hertekinn af óvinum.', 10995, True, 3,2,8995)
+
+INSERT INTO games_gamesimage(image, games_id) VALUES('https://romsforever.co/wp-content/uploads/2019/12/far-cry-3-xbox-360.jpg', 5)
+
+
+
+INSERT INTO game_games (name, description, price, on_sale, category_id,console_id,discount_price) VALUES ('Call of Duty ', 'Call of Duty er fyrstu persónu skotleikur hannaður af Activison. Call of Duty er fyrsti leikurinn í hinni geysi vinsælu Call of Duty senunni.', 5995, False, 1,2,4995)
+
+INSERT INTO games_gamesimage(image, games_id) VALUES('https://3.bp.blogspot.com/-1akrKdYQN6Q/UGhtfvBN86I/AAAAAAAAAUQ/_m-hKelv72Y/s1600/5qka1.jpg', 6)
+
+INSERT INTO games_games (name, description, price, on_sale, category_id,console_id,discount_price) VALUES ('Super Mario Bros', 'Super Mario Bros sem er framhald af leiknum Mario Bros og fyrsti leikurinn í einni stærstu leikja sería í heimi Super Mario. Þegar leikur kom út árið 1983 fyrir NES hefur selst yfir 30 milljóna eintaka á heimsvísu, og þess vegna er ALGJÖR SKYLDA að eiga þennan leik ef maður á NES!', 6995, False, 5,7,5995)
+
+INSERT INTO games_gamesimage(image, games_id) VALUES('https://3.bp.blogspot.com/-zVsPaZPRiNw/W_vmniDNHKI/AAAAAAAAAWE/REezChDbo-Eogzw2vc6yARPxHaOEJOawgCLcBGAs/s1600/super-mario-bros-nes-cover_a-G-10636766-0.jpg',7)
+
+INSERT INTO games_games (name, description, price, on_sale, category_id,console_id,discount_price) VALUES ('Sonic the Hedgehog ','Sonic the Hedgehog er leikurinn um hinn geysi vinsæla og ofur fljótta blá broddgölt Sonic. Leikurinn kom út árið 1991 fyrir Sega Genesis og hefur selst yfir 15 milljóna eintaka á heimsvísu.', 6995,False,5,8,5995)
+
+INSERT INTO games_gamesimage(image, games_id) VALUES('https://images-na.ssl-images-amazon.com/images/I/511SKY9ZY8L._SY445_.jpg',8)
+
+INSERT INTO games_games (name, description, price, on_sale, category_id,console_id,discount_price) VALUES ('Tetris ','Tetris er einn frægasti puzzle tölvuleikur sem hefur verið gerður. Leikurinn kom út árið 1989 fyrir Gameboy og seldust yfir 30 milljóna eintaka á heimsvísu. ', 4995,False,5,5,4495)
+
+INSERT INTO games_gamesimage(image, games_id) VALUES('https://images-na.ssl-images-amazon.com/images/I/81zn-iZMHrL._AC_SL1178_.jpg', 9)
+
+
+
+INSERT INTO computers_computers (name, description, price, on_sale,discount_price) VALUES('Nintendo Switch', 'Nintendo Switch er einn vinsælasta leikjartölvan á markaðinum. Það er bæði hægt að tengja hana beint við sjónvarpið eða spila hana á  6,2 “ 720p snertiskjá hennar. Tölvan hefur 32GB Flash minni sem er stækkanlegt með Micro SD korti allt að 2TB. Endingartími innbyggðu rafhlöðunar nær allt að 6 klukkstundum. Með henni fylgja tveir Joy-Con stýripinnar.',55995,False,49995)
+
+INSERT INTO computers_computersimage(image, games_id) VALUES('https://www.bigw.com.au/medias/sys_master/images/images/h44/hfd/14112359874590.jpg',1)
+
+INSERT INTO computers_computers (name, description, price, on_sale,discount_price) VALUES('ZX Spectrum ', 'Hinn geysi vinsæla ZX Spectrum sem kom út árið 1982 er til sölu hjá okkur Captain Console. Hún er með
+Zilog Z89 A örgjörva ,16 kB af vinnsluminni og 16 kB af ROM. ZX Spectrum var meðal fyrstu tölvum sem var ætlað fyrir heimilið í Bretlandi.',63875,False,59875,)
+
+INSERT INTO computers_computersimage(image, games_id) VALUES('https://upload.wikimedia.org/wikipedia/commons/3/33/ZXSpectrum48k.jpg',2)
+
+INSERT INTO computers_computers (name, description, price, on_sale,discount_price) VALUES('Playstation Classic ', 'Playstation Classic sem kom út árið 1994, er fyrsta tölvan í Playstation senunni sem eru eitthvað frægustu leikjartölvur heims. Í tölvunni er MediaTek MT8167a, Quad-Core ARM Cortex-A35 örgjavi, 1 GB af DDR3 vinnsluminni, 16 GB eMMC Flash minni og Power VR GE8300 skjákort. Með tölvunni fylgja 20 leikir og tveir stýripinnar',20995,False,18995)
+
+INSERT INTO computers_computersimage(image, games_id) VALUES('https://images-na.ssl-images-amazon.com/images/I/71ycQDpkjDL._AC_SL1500_.jpg',3)
+
+
+INSERT INTO computers_computers (name, description, price, on_sale,discount_price) VALUES('Nintendo GameCube', 'Nintendo GameCube sem kom út árið 2001 og seldust um 22 milljóna eintaka á heimsvísu er til sölu hjá okkur. Í tölvunni er 32-bit IBM PowerPC 750CXe Gekko @ 486 MHz örgjavi, 24 MB af vinnsluminni og ATI Flipper GPU @ 162 MHz with 3MB embedded 1T-SRAM Skjákort. Með tölvunni fylgir einn GameGube stýripinni', 32995,False, 29995)
+
+INSERT INTO computers_computersimage(image, games_id) VALUES('https://images-eu.ssl-images-amazon.com/images/G/02/uk-videogames/2014/ConsoleComp/aplus/GameCube_Console_lg._V343964787_.jpg',4)
+
+
+
+INSERT INTO computers_computers (name, description, price, on_sale,discount_price) VALUES('First Gen Gameboy', 'First Gen Gameboy sem kom út árið 1989 og seldust um 119 milljóna eintaka á heimsvísu er til sölu hjá okkur. Í tölvunni er innbyggður 2,6” 160*144p skjár, Sharp LR35902 core @ 4.19 MHz örgjavi, 8 kB af vinnsluminni og 8 kB af Video RAM. Tölvan er knúið af 4 x AA batteríum. ',15995,True, 12995)
+
+INSERT INTO computers_computersimage(image, games_id) VALUES('https://upload.wikimedia.org/wikipedia/commons/f/f4/Game-Boy-FL.jpg',5)
+
+INSERT INTO computers_computers (name, description, price, on_sale,discount_price) VALUES('Nintendo 64', 'Nintendo 64 sem kom út árið 1996 og seldust um 32 milljóna eintaka á heimsvísu er til sölu hjá okkur. Í tölvunni er 64-bit NEC VR4300 @ 93.75 MHz örgjavi, 4 MB vinnsluminni og 4 - 64 MB af geymsluplási. Tölvan er með SGI RCP @ 62.5 MHz GPU og fylgir henni einn Nintendo 64 stýripinni.',48995,False, 42995)
+
+INSERT INTO computers_computersimage(image, games_id) VALUES('https://media.gamestop.com/i/gamestop/10122934/Nintendo-64-Black?$pdp$',6)
+
+INSERT INTO computers_computers (name, description, price, on_sale,discount_price) VALUES('Nintendo Entertainment System ', 'Nintendo Entertainment System sem kom út árið 1983 og seldust um 62 milljóna eintaka á heimsvísu er til sölu hjá okkur. Í tölvunni er Ricoh 2A03 8-bit örgjavi, 2 kB af vinnslu minni og 2 kB af Video RAM. Með tölvunni fylgir einn NES stýripinni.', 29995,False,25995)
+
+INSERT INTO computers_computersimage(image, games_id) VALUES('https://images-na.ssl-images-amazon.com/images/I/61S2kp8sjoL._AC_SL1200_.jpg',7)
+
+INSERT INTO computers_computers (name, description, price, on_sale,discount_price) VALUES('Sega Genesis', 'Sega Genesis sem kom út árið 1988 og seldust um 30 milljóna eintaka á heimsvísu er til sölu hjá okkur. Í tölvunni er Motorola 68000 @ 7.6 MHz Zilog Z80 @ 3.58 MHz örgjavi, 72 kB af vinnsluminni og 64 kB af Video RAM. Með tölvunni fylgir einn Genesis six-button stýripinni.',29995,False,25995)
+
+
+INSERT INTO computers_computersimage(image, games_id) VALUES('https://upload.wikimedia.org/wikipedia/commons/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg',8)

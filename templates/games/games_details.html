@@ -6,12 +6,21 @@
         {% endfor %}
         <h1>{{ games.name }}</h1>
         <p id="description">{{ games.description }}</p>
+        <p>Tegund: {{ games.category.name }}</p>
         <p>Leikjavél: {{ games.console.name}}</p>
-        <ul>
-            <p id="price">{{ games.price }} kr.</p>
-            <a href="#" id="cart-btn">Setja í körfu</a>
 
+        <ul>
+            <p id="price">
+                {% if games.on_sale %}
+                    <del>{{ games.price }}kr</del>
+                    {{ games.discount_price}} kr.
+                    {% else %}
+                    {{ games.price }} kr
+                {% endif %}
+            </p>
+            <a href="{% url 'buy_game' games.id%}" id="buy-btn">Kaupa vöru</a>
         </ul>
+
     </div>
 
 

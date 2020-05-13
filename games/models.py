@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
 from computers.models import Computers
-
+from django.shortcuts import reverse
 class GamesCategory(models.Model):
     name = models.CharField(max_length=255)
     def __str__(self):
@@ -13,10 +13,18 @@ class Games(models.Model):
     category = models.ForeignKey(GamesCategory, on_delete=models.CASCADE)
     console = models.ForeignKey(Computers, on_delete=models.CASCADE)
     price = models.FloatField()
+    discount_price = models.FloatField(blank=True, null=True)
     on_sale = models.BooleanField()
+
+   # slug = models.SlugField()
+    #quantity = models.IntegerField(default=1)
     def __str__(self):
         return self.name
 
+  #  def get_absolute_url(self):
+  #     return reverse("games:games", kwargs={
+    #        'slug': self.slug
+     #   })
 
 class GamesImage(models.Model):
     image = models.CharField(max_length=999)
@@ -26,6 +34,7 @@ class GamesImage(models.Model):
 
 class OrderItem(models.Model):
     items = models.ForeignKey(Games, on_delete=models.CASCADE)
+    quantity = models.IntegerField(default=1)
 
 class Order(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -34,5 +43,4 @@ class Order(models.Model):
     ordered_date = models.DateTimeField()
     ordered = models.BooleanField(default=False)
 
-def add_to_cart():
-    pass
+
