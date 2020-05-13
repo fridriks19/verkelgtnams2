@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Korta upplýsingar</h1>
+    <p> Verð: {{ buyerinfo.games.price }}</p>
+     <form class="#" action="{% url 'payment_info' id%}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input  type="submit" value="Purchase" class="#" style="clear:both; margin: 10px 0" />
+    </form>
+{% endblock %}

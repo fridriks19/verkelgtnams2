@@ -88,3 +88,5 @@ INSERT INTO computers_computers (name, description, price, on_sale,discount_pric
 
 
 INSERT INTO computers_computersimage(image, games_id) VALUES('https://upload.wikimedia.org/wikipedia/commons/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg',8)
+
+<a href="{% url 'payment_info' games.id%}" id="buy-btn">Kaupa vöru</a>
