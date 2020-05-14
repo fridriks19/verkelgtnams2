@@ -44,6 +44,9 @@ def get_games_by_id(request, id):
         'games': get_object_or_404(Games, pk=id)
     })
 
+def main(request):
+    context = {'games': Games.objects.all().order_by('name')}
+    return render(request, 'mainpage/index.html', context)
 
 @user_passes_test(lambda u: u.is_superuser)
 def create_game(request):

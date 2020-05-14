@@ -22,6 +22,19 @@ def index(request):
     context = {'computers': Computers.objects.all().order_by('name') }
     return render(request, 'computers/index.html', context)
 
+def get_computers_by_highest(request):
+    context = {'computers': Computers.objects.all().order_by('-price')}
+    return render(request, 'computers/index.html', context)
+
+def get_computers_by_lowest(request):
+    context = {'computers': Computers.objects.all().order_by('price')}
+    return render(request, 'computers/index.html', context)
+
+def get_computers_by_name(request):
+    context = {'computers': Computers.objects.all().order_by('name')}
+    return render(request, 'computers/index.html', context)
+
+
 
 def get_computers_by_id(request, id):
     return render(request, 'computers/computers_details.html', {

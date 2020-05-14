@@ -7,5 +7,8 @@
         {{ form }}
         <input type="submit" class="#" value="Update"/>
     </form>
+     {% if user.is_authenticated %}
+        <img src="{{ user.profile.profile_image }}" class="profile-image">
+    {% endif %}
 
 {% endblock %}

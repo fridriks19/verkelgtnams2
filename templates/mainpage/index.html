@@ -1,9 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
     <h1>eat </h1>
+    <div class="on_sale">
+        <div class="index-product">
+        {% for game in games %}
+            {% if game.on_sale %}
+            {% include 'games/single_game.html' with games=game %}
+            {% endif %}
+        {% endfor %}
 
-        <p>{% for game in games %}
-            {{ game.name}}
-        {% endfor %}</p>
+        {% for computer in computers %}
+            {% if computer.on_sale %}
+            {% include 'computers/single_computer.html' with computers=computer%}
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+
 
 {% endblock %}

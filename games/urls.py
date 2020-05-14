@@ -11,5 +11,5 @@ urlpatterns = [
     path('update_game/<int:id>', views.update_game, name="update_game"),
     path('buy_game/<int:id>', views.buy_game, name="buy_game"),
     path('payment_info/<int:id>', views.payment_info, name="payment_info"),
-
+    path('main', views.main, name="games-main")
 ]
