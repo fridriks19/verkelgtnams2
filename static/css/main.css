@@ -31,29 +31,23 @@ a:hover{
 }
 
 .login #login, #register, #logout{
-    background-color: rgb(151, 179, 255);
-    color: white;
+    background-color: white;
+    color: rgb(17, 157, 164);
     padding: 14px 20px;
     margin: 8px 0;
     border-style: solid;
     border-color: rgb(0, 0, 0);
     cursor: pointer;
     width: 10%;
-    border-radius: 20px;
+    border-radius: 30px;
     text-decoration: none;
 }
-
-
-
-
-
 
 .footer  {
       left: 0;
       bottom: 0;
       width: 100%;
-      background-color: rgb(151, 179, 255) ;
-      color: white;
+      color: rgb(17, 157, 164);
       text-align: center;
 }
 .navigation{
@@ -77,7 +71,7 @@ a:hover{
 }
 .navigation ul li{
     width: 100%;
-    border: 1px solid;
+    border: 2px solid;
     font-size: 40px;
     text-align: center;
 }
@@ -88,10 +82,12 @@ a:hover{
 }
 
 .navigation a:hover, li:hover {
+    background-color: rgb(17, 157, 164);
 
 }
 
 .navigation a:hover, li:active{
+   background-color: rgb(17, 157, 164);
 
 }
 
@@ -126,7 +122,7 @@ a:hover{
     width: 20%;
     padding: 20px;
     background: rgb(205, 205, 205);
-    color: white;
+    color: black;
     font-size: 17px;
     border: 1px solid grey;
     border-left: none;
@@ -181,7 +177,7 @@ a:hover{
 }
 
 .home .link {
-    color: rgb(172, 214, 255);
+    color: rgb(17, 157, 164);
     font-size: 70px;
  }
 
