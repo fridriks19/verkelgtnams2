@@ -4,7 +4,7 @@
     <div class="details">
 
          {% for computers_image in computers.computersimage_set.all %}
-            <img src="{{ computers_image.image }}" id="product-img" />
+            <img src="{{ computers_image.image }}" class="product-img" />
         {% endfor %}
 
 
@@ -13,7 +13,7 @@
         <p id="description">{{ computers.description }}</p>
         <!--The second image -->
          {% for computers_image in computers.computersimage_set.all %}
-             <img src="{{ computers_image.image2 }}" id="product-img2" />
+             <img src="{{ computers_image.image2 }}" class="product-img2" />
         {% endfor %}
 
         <ul>

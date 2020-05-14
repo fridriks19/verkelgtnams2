@@ -1,7 +1,7 @@
 
 <div class="single-product">
     <a href="/computers/{{ computers.id }}">
-        <img id="product-img" src="{{ computers.computersimage_set.first.image}}"/>
+        <img class="product-img" src="{{ computers.computersimage_set.first.image}}"/>
         <h4>{{ computers.name }}</h4>
         <p id="price">
             {% if computers.on_sale %}

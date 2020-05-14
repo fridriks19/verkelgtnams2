@@ -38,7 +38,6 @@ class BuyGameForm(ModelForm):
             'city': widgets.TextInput,
             'country': widgets.Select,
             'postal_code': widgets.TextInput,
-
         }
 
 class PaymentForm(ModelForm):

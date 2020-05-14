@@ -109,6 +109,8 @@ def buy_game(request, id):
         'id': id
     })
 
+
+
 @login_required
 def payment_info(request, id):
     if request.method == 'POST':
@@ -122,5 +124,4 @@ def payment_info(request, id):
         'form': form,
         'id': id
     })
-
 

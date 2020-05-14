@@ -1,6 +1,9 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% block content %}
-    <div class="cart">
-        <h3 class="#">Hello from the index app in cart template</h3>
-    </div>
+    <h1>Persónulegar upplýsingar</h1>
+    <form class="personal-info" action="{% url 'buy_game' id %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Vista upplýsingar" id="btn"/>
+    </form>
 {% endblock %}

@@ -23,7 +23,6 @@ class BuyerInfo(models.Model):
     city = models.CharField(max_length=255)
     country = CountryField()
     postal_code = models.CharField(max_length=10)
-    product = models.ForeignKey(Games, on_delete=models.CASCADE)
 
 class PaymentInfo(models.Model):
     card_holder = models.CharField(max_length=255)
@@ -32,5 +31,6 @@ class PaymentInfo(models.Model):
     card_cvc = models.CharField(max_length=3)
     date_ordered = models.DateTimeField(auto_now=True)
     buyer_id = models.ForeignKey(BuyerInfo, on_delete=models.CASCADE)
+
 
 

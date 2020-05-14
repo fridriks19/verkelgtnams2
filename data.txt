@@ -12,6 +12,18 @@ INSERT INTO computers_computersimage (image, computers_id) VALUES('https://speci
 
 
 
+
+        <div class="final">
+            <h1>Korta Upplýsingar</h1>
+            <form class="payment-info" action="{% url 'payment_info' id %}" method="post">
+                {% csrf_token %}
+                {{ form }}
+            </form>
+        </div>
+
+
+
+
 INSERT INTO games_games (name, description, price, on_sale, category_id,console_id,discount_price) VALUES ('Doom Eternal',  'Doom Eternal er fyrstu persónu skotleikur hannaður af id Software. Doom Eternal er beint framhald af leiknum Doom og mun leikurinn taka þig inn í heim hryllings.', 11995, False, 2, 2,9995)
 
 INSERT INTO games_gamesimage(image, games_id) VALUES('https://images-na.ssl-images-amazon.com/images/I/91T8GA3DcML._SL1500_.jpg', 1)
