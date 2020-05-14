@@ -1,9 +1,22 @@
+
 {% extends 'base.html' %}
 {% block content %}
-    <h1>{{ computers.name }}</h1>
-    <p>{{ computers.description }}</p>
-    <p>{{ computers.price }}</p>
-    {% for computers_image in computers.computersimage_set.all %}
-        <img src="{{ computers_image.image }}" class="computers-img" />
-    {% endfor %}
+    <div class="details">
+         {% for computers_image in computers.computersimage_set.all %}
+        <img src="{{ computers_image.image }}" class="product-img" />
+        {% endfor %}
+        <h1>{{ computers.name }}</h1>
+        <p id="description">{{ computers.description }}</p>
+        <ul>
+            <p id="price">
+                {% if computers.on_sale %}
+                    <del>{{ computers.price }}kr</del>
+                    {{ computers.discount_price}} kr.
+                    {% else %}
+                    {{ computers.price }} kr
+                {% endif %}
+            </p>
+            <a href="{% url 'buy_game' computers.id%}" id="buy-btn">Kaupa vöru</a>
+        </ul>
+    </div>
 {% endblock %}

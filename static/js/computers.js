@@ -7,15 +7,25 @@ $(document).ready(function(){
             type: 'GET',
             success: function(resp) {
                 var newHtml = resp.data.map(d => {
-                    return `<div class="single-computers"> 
+                      if(d.on_sale){
+                        d.x = d.discount_price;
+                        d.y = d.price
+                    } else {
+                          d.x = d.price;
+                          d.y = ""
+                      }
+                    return `<div class="single-product"> 
                                 <a href="/computers/${d.id}">
-                                    <img class="computers-img" src="${d.firstImage}"/>
+                                    <img class="product-img" src="${d.firstImage}"/>
                                     <h4>${d.name}</h4> 
-                                    <p>${d.description}</p> 
+                                    <p>
+                                    <del>${d.y}</del>
+                                        ${d.x} kr.
+                                    </p>
                                 </a> 
                             </div>`
                 });
-                $('.index-computers').html(newHtml.join(''));
+                $('.index-product').html(newHtml.join(''));
                 $('#search-box').val('');
             },
             error: function(xhr, status, error){
@@ -25,3 +35,8 @@ $(document).ready(function(){
         })
     });
 });
+
+
+
+
+

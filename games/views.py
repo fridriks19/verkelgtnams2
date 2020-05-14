@@ -7,8 +7,6 @@ from games.models import Games, GamesImage
 from user.models import BuyerInfo
 
 # Create your views here
-
-
 def index(request):
     if 'search_filter' in request.GET:
         search_filter = request.GET['search_filter']
@@ -16,7 +14,12 @@ def index(request):
             'id': x.id,
             'name': x.name,
             'description': x.description,
-            'firstImage': x.gamesimage_set.first().image
+            'firstImage': x.gamesimage_set.first().image,
+            'price': x.price,
+            'category': x.category.name,
+            'console': x.console.name,
+            'discount_price': x.discount_price,
+            'on_sale': x.on_sale
         } for x in Games.objects.filter(name__icontains=search_filter)]
         return JsonResponse({'data': games})
     context = {'games': Games.objects.all().order_by('name') }

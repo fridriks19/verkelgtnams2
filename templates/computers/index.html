@@ -7,11 +7,11 @@
     <div class="input-group">
         <input type="search" class="search" id="search-box" placeholder="Hverju ertu að leita af..."/>
         <div class="#">
-            <button type="button" id="search-btn" class="#">Search</button>
+            <button type="button" id="search-btn" class="#">Leita</button>
         </div>
     </div>
 
-    <div class="index-computers">
+    <div class="index-product">
     {% for computer in computers %}
         {% include 'computers/single_computer.html' with computers=computer %}
     {% endfor %}

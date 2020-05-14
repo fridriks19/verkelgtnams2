@@ -1,10 +1,19 @@
 
-<div class="single-computers">
+<div class="single-product">
     <a href="/computers/{{ computers.id }}">
-        <img class="computers-img" src="{{ computers.computersimage_set.first.image}}"/>
+        <img class="product-img" src="{{ computers.computersimage_set.first.image}}"/>
         <h4>{{ computers.name }}</h4>
-        <p>{{ computers.description }}</p>
-        <p>{{ computers.price }}</p>
+        <p>
+            {% if computers.on_sale %}
+                <del>{{ computers.price }}</del>
+                {{ computers.discount_price }} kr.
+                {% else %}
+                {{ computers.price }} kr.
+            {% endif %}
+        </p>
     </a>
 </div>
+
+
+
 

@@ -124,14 +124,14 @@ a:hover{
 }
 
 /* The parent is a flex with a wrap to get a normal looking listing*/
-.index-games {
+.index-product {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid rgb(217, 217, 217);
 }
 
 /* This makes sure that there can only be three games per row */
-.single-games {
+.single-product {
     border-style: double;
     margin: 1%;
     flex: 0 0 30%;
@@ -139,30 +139,29 @@ a:hover{
 ;
 }
 /*when hovering over a single game */
-.single-games:hover{
+.single-product:hover{
   background-color: rgb(198, 198, 198);
 }
 
-.single-games .games-img{
+.single-product .product-img{
     height: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    border: 1px solid black;
 }
 
-.single-games .games-img:hover{
+.single-product .product-img:hover{
     opacity: 0.7;
     filter: alpha(opacity=70);
 }
-.single-games h4 {
+.single-product h4 {
     font-size: 25px;
     text-align: center;
     color: rgb(0, 0, 0);
 }
 
-.single-games p{
+.single-product p{
     font-size: 18px;
     color: rgb(0, 0, 0);
 }
@@ -175,7 +174,7 @@ a:hover{
 .details{
 }
 
-.details .games-img{
+.details .product-img{
     padding: 10px;
     height: 500px;
     display: block;

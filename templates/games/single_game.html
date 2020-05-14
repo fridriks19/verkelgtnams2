@@ -1,10 +1,9 @@
-<div class="single-games">
+<div class="single-product">
     <a href="/games/{{ games.id }}">
-        <img class="games-img" src="{{ games.gamesimage_set.first.image }}"/>
+        <img class="product-img" src="{{ games.gamesimage_set.first.image }}"/>
         <h4>{{ games.name }}</h4>
         <p>Tegund: {{ games.category.name }}</p>
         <p>Leikjavél: {{ games.console.name}}</p>
-
             <p>
                 {% if games.on_sale %}
                     <del>{{ games.price }}kr</del>
