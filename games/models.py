@@ -1,7 +1,8 @@
 from django.db import models
 from django.conf import settings
-from computers.models import Computers
+from computers.models import Computers, Manufacturer
 from django.shortcuts import reverse
+
 class GamesCategory(models.Model):
     name = models.CharField(max_length=255)
     def __str__(self):

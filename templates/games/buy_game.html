@@ -1,13 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
     <h1>Persónulegar upplýsingar</h1>
-    <form class="#" action="{% url 'buy_game' id %}" method="post">
+    <form class="personal-info" action="{% url 'buy_game' id %}" method="post">
         {% csrf_token %}
         {{ form }}
-        <input type="submit" value="Vista upplýsingar" class="#" style="clear:both; margin: 10px 0" />
+        <input type="submit" value="Vista upplýsingar" id="btn"/>
     </form>
-
-
 
 
 {% endblock %}

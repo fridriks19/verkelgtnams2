@@ -1,6 +1,8 @@
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
+
+from computers.models import Computers
 from games.forms.game_form import GameCreateForm, GameUpdateForm, BuyGameForm, PaymentForm
 from games.models import Games, GamesImage
 
@@ -38,15 +40,21 @@ def get_games_by_name(request):
     context = {'games': Games.objects.all().order_by('name')}
     return render(request, 'games/index.html', context)
 
+def get_games_by_category(request):
+    context = {'games': Games.objects.all().order_by('category__name')}
+    return render(request, 'games/index.html', context)
+
+def get_games_by_console(request):
+    context = {'games': Games.objects.all().order_by('console__name')}
+    return render(request, 'games/index.html', context)
+
 
 def get_games_by_id(request, id):
     return render(request, 'games/games_details.html', {
         'games': get_object_or_404(Games, pk=id)
     })
 
-def main(request):
-    context = {'games': Games.objects.all().order_by('name')}
-    return render(request, 'mainpage/index.html', context)
+
 
 @user_passes_test(lambda u: u.is_superuser)
 def create_game(request):

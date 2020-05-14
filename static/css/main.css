@@ -56,33 +56,43 @@ a:hover{
       color: white;
       text-align: center;
 }
+.navigation{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.555);
+    color: rgb(136, 136, 136);
+    display: block;
+    overflow: hidden;
+    width: 100%;
 
+}
+
+.navigation ul{
+    list-style-type: none;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.navigation ul li{
+    width: 100%;
+    border: 1px solid;
+    font-size: 40px;
+    text-align: center;
+}
 
 .navigation a{
-    float: left;
-    padding: 4px;
-    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 30px;
-    width: 48%;
-    text-align: center;
-    padding-left: 10px ;
-    border-style: solid;
-    }
-.navigation {
-    width: 100%;
-    background-color: rgb(228,228,228);
-    overflow: auto;
+     color: rgb(0, 0, 0);
+}
 
+.navigation a:hover, li:hover {
 
 }
 
-.navigation a:hover {
-    background-color: rgb(165, 161, 161);
-}
+.navigation a:hover, li:active{
 
-.navigation a:active{
-    background-color: rgb(129, 129, 129);
 }
 
 .search{
@@ -110,7 +120,8 @@ a:hover{
     background: #f1f1f1;*/
 }
 
-.input-group #search-btn-computers{
+
+.input-group #search-btn, #search-btn-comp{
     margin: auto;
     width: 20%;
     padding: 20px;
@@ -122,17 +133,6 @@ a:hover{
     cursor: pointer;
 }
 
-.input-group #search-btn{
-    margin: auto;
-    width: 20%;
-    padding: 20px;
-    background: rgb(205, 205, 205);
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-}
 
 
 /* The parent is a flex with a wrap to get a normal looking listing*/
@@ -155,7 +155,7 @@ a:hover{
   background-color: rgb(198, 198, 198);
 }
 
-.single-product .product-img{
+.single-product #product-img{
     height: 300px;
     display: block;
     margin-left: auto;
@@ -163,7 +163,7 @@ a:hover{
     width: 50%;
 }
 
-.single-product .product-img:hover{
+.single-product #product-img:hover{
     opacity: 0.7;
 }
 .single-product h4 {
@@ -172,9 +172,12 @@ a:hover{
     color: rgb(0, 0, 0);
 }
 
+
 .single-product p{
     font-size: 18px;
+    text-decoration: none;
     color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 .home .link {
@@ -185,13 +188,25 @@ a:hover{
 .details{
 }
 
-.details .product-img{
+.details #product-img{
     padding: 10px;
     height: 500px;
+    width: 40%;
     display: block;
     float: left;
     margin: 30px;
-    border: 1px solid black;
+    border: 1px solid;
+    border-color: rgb(226, 226, 226) ;
+}
+
+.details #product-img2{
+    padding: 10px;
+    height: 100px;
+    width: 20%;
+    display: block;
+    float: left;
+    margin: 30px;
+    border: 1px solid;
     border-color: rgb(226, 226, 226) ;
 }
 
@@ -252,16 +267,34 @@ a:hover{
     border-style: solid;
 }
 
-.order-btn {
-    display: block ruby;
-}
 
+.order-btn{
+    margin: 7px;
+}
 .order-btn #order-btn{
     color: black;
     font-size: 20px;
+    display: contents;
 }
 
+.profile-image-profile{
+    height: 200px;
+}
 
+.profile-image{
+    height: 30px;
+}
+
+.personal-info{
+    display: inline-grid;
+    padding: 10px;
+}
+
+.personal-info #btn{
+    margin: 10px;
+    font-size: 30px;
+    width: 50%;
+}
 
 
 

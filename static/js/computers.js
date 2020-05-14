@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('#search-btn').on('click', function(e) {
+    $('#search-btn-comp').on('click', function(e) {
         e.preventDefault();
-        var searchText = $('#search-box').val();
+        var searchText = $('#search-box-comp').val();
         $.ajax({
             url: '/computers?search_filter=' + searchText,
             type: 'GET',
@@ -26,7 +26,7 @@ $(document).ready(function(){
                             </div>`
                 });
                 $('.index-product').html(newHtml.join(''));
-                $('#search-box').val('');
+                $('#search-box-comp').val('');
             },
             error: function(xhr, status, error){
                 //TODO: GERA BETRI ERROR HANDLE
@@ -35,8 +35,6 @@ $(document).ready(function(){
         })
     });
 });
-
-
 
 
 
