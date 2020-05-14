@@ -241,5 +241,12 @@ a:hover{
     border-style: solid;
 }
 
+.order-btn {
+    display: block ruby;
+}
 
+.order-btn #order-btn{
+    color: black;
+    font-size: 20px;
+}
 

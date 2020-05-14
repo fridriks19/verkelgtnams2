@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-    <p>Hæsta verð</p>
-    <p>Lægsta verð</p>
+    <div class="order-btn">
+        <p id="order-btn">Raða eftir: </p>
+        <a id ="order-btn" href="/games/get_games_by_highest">Hæsta verði, </a>
+        <a id ="order-btn" href="/games/get_games_by_lowest">Lægsta verði, </a>
+        <a id ="order-btn" href="/games/get_games_by_name">Nafni</a>
+    </div>
     <h1 id="header">Tölvuleikir</h1>
-
     <div class="input-group">
         <input type="search" class="search" id="search-box" placeholder="Hverju ertu að leita af..."/>
         <div class="#">

@@ -25,9 +25,18 @@ def index(request):
     context = {'games': Games.objects.all().order_by('name') }
     return render(request, 'games/index.html', context)
 
-def mainpage(request):
+
+def get_games_by_highest(request):
+    context = {'games': Games.objects.all().order_by('-price')}
+    return render(request, 'games/index.html', context)
+
+def get_games_by_lowest(request):
+    context = {'games': Games.objects.all().order_by('price')}
+    return render(request, 'games/index.html', context)
+
+def get_games_by_name(request):
     context = {'games': Games.objects.all().order_by('name')}
-    return render(request, 'mainpage/index.html', context)
+    return render(request, 'games/index.html', context)
 
 
 def get_games_by_id(request, id):
