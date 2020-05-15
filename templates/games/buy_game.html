@@ -4,7 +4,7 @@
     <div class="box-final">
         <div class="final">
             <h1>Persónulegar upplýsingar</h1>
-            <form class="personal-info" action="{% url 'buy_game' id %}" method="post">
+            <form class="personal-info" action="{% url 'buy_game' %}" method="post">
                 {% csrf_token %}
                 {{ form }}
                 <div>

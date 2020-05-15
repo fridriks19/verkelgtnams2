@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!--The confirmation page  -->
+  <div class="read_review" >
+    <h1>PÖNTUNAR UPPLÝSINGAR</h1>
+    <p>Nafn: {{ last_buyer.card_holder}}!!!!</p>
+    <p>Heimilisfang: {{ last_buyer_info.street_name}}{{ last_buyer_info.house_number }}</p>
+    <p>Staður: {{ last_buyer_info.city }}</p>
+    <p>Land: {{ last_buyer_info.country }}</p>
+    <p>Póstnúmer: {{ last_buyer_info.postal_code }}</p>
+    <p>Dagsetning pöntunar: {{ last_buyer.date_ordered }}</p>
+      <a id="go-back" href="{% url 'payment_info' %}">Fara til baka</a>
+    <a id="go-back" href="read_review">Borga pöntun</a>
+  </div>
+
+{% endblock %}

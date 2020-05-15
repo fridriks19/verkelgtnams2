@@ -58,6 +58,12 @@ def read_review(request):
     context = {'last_buyer': last_buyer, 'last_buyer_info': last_buyer_info }
     return render(request, 'games/read_review.html', context)
 
+def review(request):
+    last_buyer_info = BuyerInfo.objects.last()
+    last_buyer = PaymentInfo.objects.last()
+    context = {'last_buyer': last_buyer, 'last_buyer_info': last_buyer_info }
+    return render(request, 'games/review.html', context)
+
 @user_passes_test(lambda u: u.is_superuser)
 def create_game(request):
     if request.method == 'POST':
@@ -98,32 +104,30 @@ def update_game(request, id):
 
 
 @login_required
-def buy_game(request, id):
+def buy_game(request):
     if request.method == 'POST':
         form = BuyGameForm(data=request.POST)
         if form.is_valid():
             form.save()
-            return redirect('payment_info', id=id)
+            return redirect('payment_info')
     else:
         form = BuyGameForm()
     return render(request, 'games/buy_game.html', {
         'form': form,
-        'id': id
     })
 
 
 
 @login_required
-def payment_info(request, id):
+def payment_info(request):
     if request.method == 'POST':
         form = PaymentForm(data=request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/games/read_review', id=id)
+            return redirect('/games/review')
     else:
         form = PaymentForm()
     return render(request, 'games/payment_info.html', {
         'form': form,
-        'id': id
     })
 

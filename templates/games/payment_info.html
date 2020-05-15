@@ -2,12 +2,13 @@
 {% block content %}
      <div class="final">
     <h1>Korta upplýsingar</h1>
-     <form class="payment-info" action="{% url 'payment_info' id%}" method="post">
+     <form class="payment-info" action="{% url 'payment_info'%}" method="post">
         {% csrf_token %}
         {{ form }}
          <div>
-            <input type="submit" value="Borga pöntun" class="#" style="clear:both; margin: 10px 0" />
+            <input type="submit" value="Halda áfram" class="#"  />
          </div>
     </form>
+     <a id="go-back" href="{% url 'buy_game'%}">Fara til baka</a>
      </div>
 {% endblock %}

@@ -341,3 +341,11 @@ a:hover{
     text-align: center;
     padding: 20px;
 }
+#go-back{
+    text-decoration: none;
+    border: 1px solid;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: grid;
+    border-radius: 4px;
+}
