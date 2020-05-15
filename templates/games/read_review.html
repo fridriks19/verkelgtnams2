@@ -2,11 +2,27 @@
 {% block content %}
   <div class="read_review" >
     <h1>Pöntun mótekinn</h1>
+    <p >Pöntunar Númer: <p id="confirmation"></p> </p>
+
     <h3>Takk fyrir að hafa verslað hjá Captain Console</h3>
-      <p>Njótu leiksins/tölvunar {{ last_buyer.card_holder}}!!!!</p>
+    <p>Njótu leiksins/tölvunar {{ last_buyer.card_holder}}!!!!</p>
     <p>PÖNTUNAR UPPLÝSINGAR</p>
     <p>Heimilisfang: {{ last_buyer_info.street_name}}{{ last_buyer_info.house_number }}</p>
     <p>Póstnúmer: {{ last_buyer_info.postal_code }}</p>
     <p>Dagsetning pöntunar: {{ last_buyer.date_ordered }}</p>
+    <p onload="static/js:myFunction"></p>
   </div>
+
+
+
+
+    <!--random number genorator for conformation number -->
+    <script>
+         function myFunction() {
+            var x = document.getElementById("confirmation")
+            x.innerHTML = Math.floor((Math.random()*10000000000)+1)
+        }
+        window.onload = myFunction;
+    </script>
+
 {% endblock %}
