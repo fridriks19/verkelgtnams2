@@ -101,7 +101,7 @@ def buy_game(request, id):
         form = BuyGameForm(data=request.POST)
         if form.is_valid():
             form.save()
-            return redirect('games_details', id=id)
+            return redirect('payment_info', id=id)
     else:
         form = BuyGameForm()
     return render(request, 'games/buy_game.html', {

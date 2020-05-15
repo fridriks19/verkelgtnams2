@@ -3,11 +3,12 @@ body {
     min-height: 600px;
     padding: 0;
     margin: 0px;
-    background-image: url("hero02_en.jpg");
+    background: rgba(229, 213, 235, 0.4);
+   /* background-image: url("hero02_en.jpg");*/
 }
 
 a:hover{
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 #header {
@@ -44,10 +45,6 @@ a:hover{
     border-radius: 20px;
     text-decoration: none;
 }
-
-
-
-
 
 
 .footer  {
@@ -90,10 +87,11 @@ a:hover{
 }
 
 .navigation a:hover, li:hover {
-
+    background-color: rgb(230, 230, 230);
 }
 
 .navigation a:hover, li:active{
+    background-color: rgb(230, 230, 230);
 
 }
 
@@ -167,8 +165,9 @@ a:hover{
 }
 
 .single-product .product-img:hover{
-    opacity: 0.7;
+    opacity: 0.6;
 }
+
 .single-product h4 {
     font-size: 25px;
     text-align: center;
@@ -198,7 +197,7 @@ a:hover{
 
 }
 .details ul{
-    display: inline-block;
+
     padding-left: 0px;
 }
 

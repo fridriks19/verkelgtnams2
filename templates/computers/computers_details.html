@@ -15,7 +15,6 @@
          {% for computers_image in computers.computersimage_set.all %}
              <img src="{{ computers_image.image2 }}" class="product-img2" />
         {% endfor %}
-
         <ul>
             <p id="price">
                 {% if computers.on_sale %}

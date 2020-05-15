@@ -20,7 +20,6 @@ urlpatterns = [
     path('',include('mainpage.urls')),
     path('admin/', admin.site.urls),
     path('games/', include('games.urls')),
-    path('loginpage/', include('loginpage.urls')),
     path('mainpage/', include('mainpage.urls')),
     path('computers/', include('computers.urls')),
     path('user/', include('user.urls')),

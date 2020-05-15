@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'games.apps.GamesConfig',
     'computers.apps.ComputersConfig',
     'user.apps.UserConfig',
-    'cart.apps.CartConfig'
 ]
 
 MIDDLEWARE = [
