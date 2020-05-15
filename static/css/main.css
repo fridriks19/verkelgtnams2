@@ -22,11 +22,7 @@ a:hover{
 .container{
     min-height: 600px;
 }
-.games {
-    border-bottom: solid 2px rgb(155, 155, 155);
-    color: red;
-    background-color: aqua;
-}
+
 
 .login {
     float: right;
@@ -35,7 +31,7 @@ a:hover{
 
 .login #login, #register, #logout{
     background-color: rgb(151, 179, 255);
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 14px 20px;
     margin: 8px 0;
     border-style: solid;
@@ -52,7 +48,7 @@ a:hover{
       bottom: 0;
       width: 100%;
       background-color: rgb(151, 179, 255) ;
-      color: white;
+      color: rgb(255, 255, 255);
       text-align: center;
 }
 .navigation{
@@ -109,24 +105,13 @@ a:hover{
     padding: 50px;
 }
 
-.search input[type=text] {
-
-    /*padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: right;
-    background: white;
-    width: 80%;
-    background: #f1f1f1;*/
-}
-
 
 .input-group #search-btn, #search-btn-comp{
     margin: auto;
     width: 20%;
     padding: 20px;
     background: rgb(205, 205, 205);
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 17px;
     border: 1px solid grey;
     border-left: none;
@@ -224,7 +209,7 @@ a:hover{
 
 .details #price{
     background-color: rgb(0, 30, 127);
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 40px;
     display: inline-block;
     border: 1px solid black;
@@ -287,7 +272,7 @@ a:hover{
 
 }
 .order-btn #order-btn{
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     display: contents;
 }
@@ -300,21 +285,6 @@ a:hover{
     height: 30px;
 }
 
-
-/*
-.personal-info #btn{
-    margin: 10px;
-    font-size: 30px;
-    width: 50%;
-}
-
-.personal-info, .payment-info{
-    display: inline-grid;
-    padding: 10px;
-    margin-left: 10px;
-}
-
- */
 
 .box-final{
     display: flex;
