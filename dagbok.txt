@@ -43,38 +43,25 @@ Davíð: skrifaði upp og fann Dummy Data.
 Silfá:
 
 Sunnudagur 10 maí.
-Friðrik: Seti upp virkni fyrir tölvu sub-pageið:
+Friðrik: Seti upp virkni fyrir tölvu sub-pageið: og css stylum á öllum síðum
 Davíð: Setja virkni í "setja í körfu" hnappan
 Silfá:
 
 Mánudagur 11 maí.
-Friðrik og Davíð unnu í virkni á "checkout paginu"
+Friðrik og Davíð unnu í virkni á "checkout paginu" og css stylum á öllum síðum
 Silfá:
 
 Þriðjudagur 12 maí.
-Friðrik: Vann í virkni á "setja í körfu"
+Friðrik: Vann í virkni á "setja í körfu" varð ekkert æur því þar sem það koma vesen í databaseið og hættum við að ger körfu. og css stylum á öllum síðum
 Davíð:
 Silfá: Vann í útlitinu á forsíðu
 
 Miðvikudagur 13 maí
-Friðrik: Vann í "Payment Step" í "buy a product" ferlinu
+Friðrik: Vann í "Payment Step" í "buy a product" ferlinu reyna að gera eitthvað þó það yrði ekki mikið
 Davíð: Vann í að tengja Database við server
 Silfá:
 
-Miðvikudagur 13 maí
-Friðrik: Vann í "Payment Step" í "buy a product" ferlinu
-Davíð: Vann í að tengja Database við server
-Silfá:
 
-Fimmmtudagur 14 maí.
-Friðrik: Vann í virkni á payment step
-Davíð: Hélt áfram með að raða eftir og lagaði databaseið
-Silfá:
-[8:40 PM]
-Miðvikudagur 13 maí
-Friðrik: Vann í "Payment Step" í "buy a product" ferlinu
-Davíð: Vann í að tengja Database við server
-Silfá:
 
 Fimmmtudagur 14 maí.
 Friðrik: Vann í virkni á payment step
