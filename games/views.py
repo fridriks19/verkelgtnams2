@@ -1,12 +1,10 @@
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
-
 from computers.models import Computers
 from games.forms.game_form import GameCreateForm, GameUpdateForm, BuyGameForm, PaymentForm
 from games.models import Games, GamesImage
-
-from user.models import BuyerInfo
+from user.models import BuyerInfo, PaymentInfo
 
 # Create your views here
 def index(request):
@@ -54,7 +52,11 @@ def get_games_by_id(request, id):
         'games': get_object_or_404(Games, pk=id)
     })
 
-
+def read_review(request):
+    last_buyer_info = BuyerInfo.objects.last()
+    last_buyer = PaymentInfo.objects.last()
+    context = {'last_buyer': last_buyer, 'last_buyer_info': last_buyer_info }
+    return render(request, 'games/read_review.html', context)
 
 @user_passes_test(lambda u: u.is_superuser)
 def create_game(request):
@@ -117,7 +119,7 @@ def payment_info(request, id):
         form = PaymentForm(data=request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/games', id=id)
+            return redirect('/games/read_review', id=id)
     else:
         form = PaymentForm()
     return render(request, 'games/payment_info.html', {

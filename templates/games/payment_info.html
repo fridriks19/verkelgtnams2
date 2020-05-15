@@ -2,7 +2,6 @@
 {% block content %}
      <div class="final">
     <h1>Korta upplýsingar</h1>
-    <p> Verð: {{ games.id.price }}</p>
      <form class="payment-info" action="{% url 'payment_info' id%}" method="post">
         {% csrf_token %}
         {{ form }}

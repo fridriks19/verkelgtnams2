@@ -333,3 +333,11 @@ a:hover{
     padding: 10px;
     margin: 10px;
 }
+
+.read_review{
+    background-color: rgb(255, 255, 255);
+    margin: 30px;
+    border: 7px solid;
+    text-align: center;
+    padding: 20px;
+}

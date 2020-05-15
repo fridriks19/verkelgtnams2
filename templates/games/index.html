@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
+    <!--The buttons to change what order you whant to look at the items -->
     <div class="order-btn">
         <p id="order-btn">Raða eftir: </p>
         <a id ="order-btn" href="/games/get_games_by_highest">Hæsta verði, </a>
@@ -7,7 +8,6 @@
         <a id ="order-btn" href="/games/get_games_by_name">Nafni, </a>
         <a id ="order-btn" href="/games/get_games_by_category">Leikja tegund, </a>
         <a id ="order-btn" href="/games/get_games_by_console">Tölvu tegund</a>
-
 
     </div>
     <h1 id="header">TÖLVULEIKIR</h1>
@@ -17,7 +17,7 @@
             <button type="button" id="search-btn" class="#">Leita</button>
         </div>
     </div>
-
+    <!--shows all the games that are in the database -->
     <div class="index-product">
     {% for game in games %}
         {% include 'games/single_game.html' with games=game %}

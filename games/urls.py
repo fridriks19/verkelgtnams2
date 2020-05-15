@@ -13,4 +13,5 @@ urlpatterns = [
     path('update_game/<int:id>', views.update_game, name="update_game"),
     path('payment_info/<int:id>', views.payment_info, name="payment_info"),
     path('buy_game/<int:id>', views.buy_game, name="buy_game"),
+    path('read_review', views.read_review, name="read_review")
 ]

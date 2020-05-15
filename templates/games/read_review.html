@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="read_review" >
+    <h1>Pöntun mótekinn</h1>
+    <h3>Takk fyrir að hafa verslað hjá Captain Console</h3>
+      <p>Njótu leiksins/tölvunar {{ last_buyer.card_holder}}!!!!</p>
+    <p>PÖNTUNAR UPPLÝSINGAR</p>
+    <p>Heimilisfang: {{ last_buyer_info.street_name}}{{ last_buyer_info.house_number }}</p>
+    <p>Póstnúmer: {{ last_buyer_info.postal_code }}</p>
+    <p>Dagsetning pöntunar: {{ last_buyer.date_ordered }}</p>
+  </div>
+{% endblock %}

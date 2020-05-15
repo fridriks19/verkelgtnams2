@@ -27,7 +27,7 @@ class BuyerInfo(models.Model):
 class PaymentInfo(models.Model):
     card_holder = models.CharField(max_length=255)
     card_number = models.CharField(max_length=16)
-    card_exp = forms.DateField(widget=forms.SelectDateWidget)
+    card_exp = forms.CharField(max_length=5)
     card_cvc = models.CharField(max_length=3)
     date_ordered = models.DateTimeField(auto_now=True)
 
