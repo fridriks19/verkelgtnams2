@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+     <div class="final">
     <h1>Korta upplýsingar</h1>
     <p> Verð: {{ games.id.price }}</p>
      <form class="payment-info" action="{% url 'payment_info' id%}" method="post">
@@ -9,4 +10,5 @@
             <input type="submit" value="Borga pöntun" class="#" style="clear:both; margin: 10px 0" />
          </div>
     </form>
+     </div>
 {% endblock %}

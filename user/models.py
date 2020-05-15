@@ -30,7 +30,6 @@ class PaymentInfo(models.Model):
     card_exp = forms.DateField(widget=forms.SelectDateWidget)
     card_cvc = models.CharField(max_length=3)
     date_ordered = models.DateTimeField(auto_now=True)
-    buyer_id = models.ForeignKey(BuyerInfo, on_delete=models.CASCADE)
 
 
 

@@ -1,5 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
+    <h1 id="header">Sega Genisis vörur</h1>
+    <div class="index-product">
+        {%  for game in games %}
+            {% if game.console_id == 10 %}
+                {% include 'games/single_game.html' with games=game %}
+            {% endif %}
+        {% endfor %}
+
+        {% for computer in computers %}
+            {%  if computer.id == 10 %}
+                {% include  'computers/single_computer.html' with computers=computer %}
+            {% endif %}
+        {%  endfor %}
+    </div>
+
+
+
+    </div>
     <h1 id="header">VÖRUR Á AFSLÆTTI</h1>
     <div class="on_sale">
         <div class="index-product">
@@ -16,6 +34,5 @@
         {% endfor %}
         </div>
     </div>
-
 
 {% endblock %}

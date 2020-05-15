@@ -117,10 +117,10 @@ def payment_info(request, id):
         form = PaymentForm(data=request.POST)
         if form.is_valid():
             form.save()
-            return redirect('games_details', id=id)
+            return redirect('/games', id=id)
     else:
         form = PaymentForm()
-    return render(request, 'games/buy_game.html', {
+    return render(request, 'games/payment_info.html', {
         'form': form,
         'id': id
     })

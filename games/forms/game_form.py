@@ -21,7 +21,7 @@ class GameCreateForm(ModelForm):
         model = Games
         exclude = ['id']
         widgets = {
-            'name': widgets.TextInput,
+            'name': widgets.TextInput(),
             'description': widgets.TextInput,
             'category': widgets.Select,
             'on_sale': widgets.CheckboxInput

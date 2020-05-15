@@ -1,14 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Notandi</h1>
-    <h2 class="username">{{ user.username }}</h2>
+    <div class="profile">
+    <h1>Aðgangur</h1>
+    <p class="username">Nafn Notanda: {{ user.username }}</p>
+
     <form class="#" method="post">
         {% csrf_token %}
         {{ form }}
         <input type="submit" class="#" value="Update"/>
     </form>
+    <div>
      {% if user.is_authenticated %}
         <img src="{{ user.profile.profile_image }}" class="profile-image-profile">
     {% endif %}
+    </div>
+    </div>
 
 {% endblock %}
